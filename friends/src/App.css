@@ -42,8 +42,8 @@
   margin: auto;
   padding-top: 20px;
   margin-bottom: 50px;
-  background-color: #9caaba;
-  border: 5px solid rgb(79, 103, 236);
+  background-color: #d8e5f3;
+  border: 5px solid rgb(121, 139, 236);
   outline-style: solid;
   outline-color: #86c0f0;
 }
@@ -86,7 +86,7 @@ h3 {
   width: 50%;
   margin: auto;
   padding-top: 40px;
-  background-color: ivory;
+  background-color: rgb(135, 185, 226);
   height: 500px;
 }
 
@@ -98,7 +98,7 @@ h3 {
   border-radius: 5px;
   font-size: 1rem;
   font-weight: 800;
-  color: #7d8242;
+  color: #5eabf3;
 }
 
 .add-friend {
@@ -108,7 +108,7 @@ h3 {
   border-radius: 5px;
   font-size: 1rem;
   font-weight: 800;
-  color: #7d8242;
+  color: #064075;
 }
 
 input {
@@ -126,5 +126,5 @@ input {
   margin: 20px;
   font-size: 1.5rem;
   font-weight: 800;
-  color: #7d8242;
+  color: #3891f7;
 }
