@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useHistory } from "react-dom";
 import axiosWithAuth from "../axiosWithAuth";
+import Loader from "react-loader-spinner";
 
 const Login = props => {
   // console.log("Login", props);
@@ -35,20 +36,24 @@ const Login = props => {
   };
   return (
     <div>
-      <form onSubmit={login}>
+      <form className="login"  onSubmit={login}>
+      <div className="username">Username</div>
         <input
           name="username"
           type="text"
           onChange={handleChange}
           value={credentials.username}
         />
+        <div className="password">Password</div>
         <input
           name="password"
           type="password"
           onChange={handleChange}
           value={credentials.password}
         />
-        <div className="loading">
+       <button className="login-button">Log in</button>
+      </form>
+      <div className="loading">
           {isLoading && (
             <>
               <h2>Loading....</h2>
@@ -56,7 +61,6 @@ const Login = props => {
             </>
           )}
         </div>
-      </form>
     </div>
   );
 };

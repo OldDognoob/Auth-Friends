@@ -36,3 +36,95 @@
     transform: rotate(360deg);
   }
 }
+.nav {
+  max-width: 500px;
+  height: 50px;
+  margin: auto;
+  padding-top: 20px;
+  margin-bottom: 50px;
+  background-color: #9caaba;
+  border: 5px solid rgb(79, 103, 236);
+  outline-style: solid;
+  outline-color: #86c0f0;
+}
+
+a {
+  margin: 20px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: rgb(78, 189, 189);
+  font-weight: bold;
+}
+
+.friends-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+  padding-left: 50px;
+}
+
+.card {
+  margin: 20px;
+  width: 250px;
+  height: 200px;
+  background-color: rgb(142, 210, 241);
+  border: 50px solid #2a71c2;
+  outline-style: solid;
+  outline-color: rgb(128, 68, 240);
+}
+
+h2,
+h3 {
+  color: rgb(56, 142, 212);
+  font-weight: 900;
+}
+
+.login,
+.add {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+  padding-top: 40px;
+  background-color: ivory;
+  height: 500px;
+}
+
+.login-button {
+  height: 50px;
+  width: 400px;
+  margin: auto;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #7d8242;
+}
+
+.add-friend {
+  height: 50px;
+  width: 50%;
+  margin: auto;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #7d8242;
+}
+
+input {
+  height: 50px;
+  width: 400px;
+  margin: auto;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.username,
+.password {
+  margin: 20px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #7d8242;
+}
