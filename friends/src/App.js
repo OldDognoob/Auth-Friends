@@ -1,12 +1,11 @@
 import React from "react";
-import { Route, Link, Switch } from "react-router-dom";
+import { Link, Route, Switch } from "react-router-dom";
 import "./App.css";
 
-//components
-import Login from "./components/Login";
-import Friends from "./components/Friends";
-import FriendForm from "./components/FriendForm";
-import PrivateRoute from "./components/PrivateRoute";
+import Login from "./components/Login.js";
+import Friends from "./components/Friends.js";
+import FriendForm from "./components/FriendForm.js";
+import PrivateRoute from "./components/PrivateRoute.js";
 
 function App() {
   return (
@@ -14,13 +13,13 @@ function App() {
       <nav className="nav">
         <Link to="/login">Login</Link>
         <Link to="/protected">Friends</Link>
-        <Link to="addFriend">Add a Friend</Link>
+        <Link to="/addFriend">Add a Friend</Link>
       </nav>
-      <Header />
+
       <Switch>
-        <Route path="/login" component={Login}/>
-        <Route path="/addFriend" component={FriendForm}/>
+        <Route path="/login" component={Login} />
         <PrivateRoute path="/protected" component={Friends} />
+        <Route path="/addFriend" component={FriendForm} />
       </Switch>
     </div>
   );
