@@ -1,5 +1,5 @@
-import React from "react";
-import { axiosWithAuth } from "../axiosWithAuth";
+import React, {useState} from "react";
+import axiosWithAuth from '../axiosWithAuth';
 import "../App.css";
 
 const FriendForm = props => {
@@ -55,7 +55,7 @@ const FriendForm = props => {
           name="email"
           type="text"
           placeholder="Friend's Email"
-          value={friends.email}
+          value={friend.email}
           onChange={handleChange}
         />
         <button type="submit" className="add-friend">
