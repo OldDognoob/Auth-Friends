@@ -13,14 +13,14 @@ function App() {
       <nav className="nav">
         <Router>
         <Link to="/login">Login</Link>
-        <Link to="/protected">Friends</Link>
+        <Link to="/friends">Friends</Link>
         <Link to="/addFriend">Add a Friend</Link>
         </Router>
       </nav>
       <Router>
       <Switch>
         <Route path="/login" component={Login} />
-        <PrivateRoute path="/protected" component={Friends} />
+        <PrivateRoute path="/friends" component={Friends} />
         <Route path="/addFriend" component={FriendForm} />
       </Switch>
       </Router>

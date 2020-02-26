@@ -14,7 +14,7 @@ const Friends = () => {
 
   const getFriends = () => {
     axiosWithAuth()
-      .get("/friends")
+      .get("http://localhost:5000/api/friends")
       .then(response => {
         console.log(response);
         setFriends(response.data);
